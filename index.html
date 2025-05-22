@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOMATO</title>
+    <!-- <link rel="stylesheet" href="./zomato.css"> -->
+     <style>
+        *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Okra, Helvetica, sans-serif;
+}
+nav{
+    height: 72px;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+nav ol{
+    width: 500px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav li{
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    color: white;
+}
+nav p{
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+main{
+    height: 530px;
+    border: 2px solid;
+    background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+main div aside{
+    height: 4rem;
+    /* border: 2px solid; */
+    background-color: white;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+    
+}
+main img{
+    height: 60px;
+    width: 300px;
+    font-weight: 300;
+}
+main div p{
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+    line-height: 1.2;
+}
+main div{
+    text-align: center;
+    position: absolute;
+    top: 180px;
+    left: 400px;
+}
+main input{
+    height: 40px;
+    width: 150px;
+    border: none;
+
+}
+main i{
+    color: plum;
+}
+#section1 div{
+    height: 250px;
+    width: 350px;
+    border: 0.5px solid;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+#section1 aside{
+    height: 150px;
+    
+    overflow: hidden;
+}
+#section1 img{
+    height: 200px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+}
+#section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    gap: 20px;
+}
+#section1 img:hover{
+    width: 370px;
+    height: 220px;
+}
+#section1 div:hover{
+    height: 270px;
+    width: 370px;
+}
+#section2 h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+#section2 p{
+    font-size: 20px;
+    font-weight: 300;
+}
+#section2{
+    position: absolute;
+    top: 950px;
+    left: 200px;
+}
+#section3 div{
+    width: 250px;
+    height: 300px;
+    border: 2px solid;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+#section3 #div1{
+    background-image: url(https://cdn.pixabay.com/photo/2015/05/31/14/24/vintage-791942_640.jpg);
+}
+#section3 #div2{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/18/22/21/restaurant-1837150_640.jpg);
+}
+#section3 #div3{
+    background-image: url(https://cdn.pixabay.com/photo/2022/05/22/13/21/healthy-7213383_640.jpg);
+}
+#section3 #div4{
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_640.jpg);
+}
+#section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1050px;
+    left: 200px;
+    gap: 30px;
+}
+#section3 p{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 250px;
+    left: 20px;
+    font-weight: 700;
+    
+}
+#section4{
+    position: absolute;
+    top: 1500px;
+    left: 200px;
+   
+}
+#section4 h1{
+    
+    font-size: 40px;
+    font-weight: 300;
+}
+#section4 div{
+    height: 80px;
+    width: 350px;
+    border: 1px solid;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+#section4 h2{
+    font-weight: 300;
+    font-size: 20px;
+}
+#section4 p{
+    font-size: 17px;
+}
+#section4 aside{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+#section5{
+    height: 480px;
+    /* border: 2px solid red; */
+    width: 100%;
+    background-color: rgb(255, 251, 247);
+    position: absolute;
+    top: 1950px;
+}
+#section5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+#section5 #div1 {
+    /* border: 2px solid blue; */
+    height: 450px;
+    width: 300px;
+    background-image: url(https://b.zmtcdn.com/data/o2_assets/ce5bc038a8a2d4f8f24465c8826182af1726501431.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#section5 #div2{
+    /* border: 2px solid blue; */
+    height: 400px;
+    width: 480px;
+}
+#section5 #div2 #aside1{
+    display: flex;
+    gap: 30px;
+}
+#section5 #div2 h5{
+    font-size: 45px;
+    font-weight: 400;
+}
+#section5 #div2 p{
+    font-weight: 100;
+}
+#section5 #div2 #aside2{
+    display: flex;
+    gap: 30px;
+}
+#section5 #div2 >input{
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#section5 #div2 button{
+    height: 35px;
+    width: 150px;
+    background-color: rgb(239, 79, 95);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+#section5 #aside2 img{
+    height: 35px;
+    width: 120px;
+}
+#section6{
+    height: 490px;
+    /* border: 2px solid green; */
+    position: absolute;
+    top: 2530px;
+    left: 250px;
+    list-style: none;
+}
+#section6 h1{
+    font-size: 30px;
+    font-weight: 300;
+}
+#section6 details{
+    border: 0.3px solid;
+    height: 60px;
+    width: 1000px;
+    font-size: 25px;
+    list-style: none;
+}
+#section6 summary{
+    list-style: none;
+}
+footer{
+    height: 480px;
+    border: 2px solid red;
+    position: absolute;
+    top: 2950px;
+    width: 100%;
+    background-color: rgb(255, 251, 247);
+}
+footer #aside1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+footer #aside1 div select{
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+}
+footer #aside1 #div1 img{
+    height: 30px;
+    width: 150px;
+}
+footer #aside2 img{
+    height: 35px;
+    width: 120px;
+}
+footer #aside2 ol{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+footer #aside2 ol li{
+    list-style: none;
+}
+footer #aside2 h1{
+    color: rgb(54,54, 54);
+    font-weight: 300;
+    font-size: 20px;
+}
+footer #aside2 ul{
+    color: rgb(54,54, 54);
+    font-weight: 300;
+    font-size: 14px;
+}
+hr{
+    width: 980px;
+    text-align: center;
+    position: absolute;
+    left: 230px;
+}
+footer p{
+    position: absolute;
+    left: 230px;
+    font-size: 13px;
+}
+     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <p>Get the App</p>
+            <ol>
+                <li>Investors Relations</li>
+                <li>Add Restaurants</li>
+                <li>Log in</li>
+                <li>Sign up</li>
+            
+            </ol>
+        </nav>
+        <div>
+            <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt=""> <br><br>
+            <p>Discover the best food & drinks in Hyderabad</p><br><br>
+            <aside>
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Jubliee Hills,Hyderabad">
+                <i class="fa-solid fa-caret-down">|</i>
+                
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="search for Restaurant, cuisine or a dish">
+            </aside>
+        </div>
+    </main>
+    <section id="section1">
+        <div>
+            <aside><img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt=""></aside>
+            <br><h1>Order Online</h1><br>
+            <p>Stay home and order to your doorstep</p>
+
+        </div>
+        <div>
+            <aside><img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt=""></aside>
+            <br><h1>Dining</h1><br>
+            <p>View the city's favourite dining places</p>
+
+        </div>
+        <div>
+            <aside><img src="https://b.zmtcdn.com/data/o2_assets/371de657644f1b5818fcb5d83387c8c91722851940.png?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt=""></aside>
+            <br><h1>Live Events</h1><br>
+            <p>Discover the india's best concerts and Events</p>
+
+        </div>
+        
+    </section>
+    <section id="section2">
+        <h2>Collections</h2>
+        <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Hyderabad, based on trends</p>
+    </section>
+    <section id="section3">
+        <div id="div1">
+            <p>Top Trending Places</p>
+        </div>
+
+        <div id="div2">
+            <p>Newly Opened Places</p>
+        </div>
+        <div id="div3">
+            <p>Best Buffets in Town</p>
+        </div>
+        <div id="div4">
+            <p>Regional Flavours</p>
+        </div>
+
+    </section>
+    <section id="section4">
+        <h1>Popular localities in and around Hyderabad</h1><br><br>
+        <aside>
+            <div><br>
+                <h2>Jubliee Hills</h2>
+                <p>450 Places</p>
+            </div>
+            <div><br>
+                <h2>Banjara Hills</h2>
+                <p>352 Places</p>
+            </div>
+            <div><br>
+                <h2>Madhapur</h2>
+                <p>850 Places</p>
+            </div>
+            <div><br>
+                <h2>HiTech City</h2>
+                <p>650 Places</p>
+            </div>
+            <div><br>
+                <h2>Kondapur</h2>
+                <p>482 Places</p>
+            </div>
+            <div><br>
+                <h2>Begumpet</h2>
+                <p>450 Places</p>
+            </div>
+            <div><br>
+                <h2>Gachibowli</h2>
+                <p>410 Places</p>
+            </div>
+            <div><br>
+                <h2>Kukatpally</h2>
+                <p>678 Places</p>
+            </div>
+            <div><br>
+                <h2>LB Nagar</h2>
+                <p>386 Places</p>
+            </div>
+        </aside>
+
+    </section>
+    <section id="section5">
+        <div id="div1">
+            
+        </div>
+        <div id="div2">
+            <h5>Get the Zomato app</h5><br>
+            <p>We will send you a link, open it on your phone to download <br> the app</p><br><br>
+            <aside id="aside1">
+                <div>
+                    <input type="radio">
+                    <label for="">Email</label>
+                </div>
+                <div>
+                    <input type="radio">
+                    <label for="">Mobile</label>
+                </div>
+            </aside><br>
+            <input type="email" placeholder="Email">
+            <button>Share App Link</button><br><br>
+            <p>Download app from</p><br><br>
+           <aside id="aside2">
+            <aside >
+                <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
+            </aside>
+            <aside>
+                <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+            </aside>
+           </aside>
+        </div>
+
+    </section>
+    <section id="section6">
+        <h1>Explore options near me</h1><br><br>
+        <details>
+            <summary>Popular cuisines near me</summary>
+            <p>Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meDesserts food near meHyderabadi food near meIce Cream food near meKebab food near meMughlai food near meNorth Indian food near mePizza food near meSandwich food near meSeafood food near meShake food near meShawarma food near meSichuan food near meSouth Indian food near meStreet food near meTea food near me</p>
+        </details><br>
+        <details>
+            <summary>Popular restaurant types near me</summary>
+            <p>Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meDesserts food near meHyderabadi food near meIce Cream food near meKebab food near meMughlai food near meNorth Indian food near mePizza food near meSandwich food near meSeafood food near meShake food near meShawarma food near meSichuan food near meSouth Indian food near meStreet food near meTea food near me</p>
+        </details><br>
+        <details>
+            <summary>Top Restaurant Chains</summary>
+            <p>Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meDesserts food near meHyderabadi food near meIce Cream food near meKebab food near meMughlai food near meNorth Indian food near mePizza food near meSandwich food near meSeafood food near meShake food near meShawarma food near meSichuan food near meSouth Indian food near meStreet food near meTea food near me</p>
+        </details><br>
+        <details>
+            <summary>Cities We Deliver To</summary>
+            <p>Bakery food near meBeverages food near meBiryani food near meBurger food near meChinese food near meDesserts food near meHyderabadi food near meIce Cream food near meKebab food near meMughlai food near meNorth Indian food near mePizza food near meSandwich food near meSeafood food near meShake food near meShawarma food near meSichuan food near meSouth Indian food near meStreet food near meTea food near me</p>
+        </details>
+    </section>
+    
+    <footer>
+        <br><br>
+       <aside id="aside1">
+            <div id="div1">
+                <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="">
+            </div>
+            <div id="div2">
+                <select name="country" id="">
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                </select>
+
+                <select name="language" id="">
+                    <option value="English">English</option>
+                    <option value="Türkçe">Türkçe</option>
+                    <option value="हिंदी">हिंदी</option>
+                    <option value="Português (BR)">Português (BR)</option>
+                    <option value="Indonesian">Indonesian</option>
+                    <option value="Português (PT)">Português (PT)</option>
+                    <option value="Español">Español</option>
+                    <option value="Čeština">Čeština</option>
+                    <option value="Slovenčina">Slovenčina</option>
+                    <option value="Polish">Polish</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Vietnamese">Vietnamese</option>
+                </select>
+            </div>
+       </aside>
+       <aside id="aside2"><br><br>
+            <ol>
+                <li>
+                    <h1>About Zomato</h1><br>
+                    <ul>
+                        <li>Who We Are</li><br>
+                        <li>Blog</li><br>
+                        <li>Work With Us</li><br>
+                        <li>Investor Relations</li><br>
+                        <li>Report Fraud</li><br>
+                        <li>Press Kit</li><br>
+                        <li>Contact Us</li>
+                    </ul>
+                </li>
+                <li>
+                    <h1>Zomaverse</h1><br>
+                    <ul>
+                        <li>Zomato</li><br>
+                        <li>Blinkit</li><br>
+                        <li>Feeding India</li><br>
+                        <li>Hyperpure</li><br>
+                        <li>Zomato Live</li><br>
+                        <li>Zomaland</li><br>
+                        <li>Weather Union</li>
+                    </ul>
+                
+                </li>
+                <li>
+                    <h1>For Restaurants</h1><br>
+                    <ul>
+                        <li>Partner With Us</li><br>
+                        <li>Apps For You</li><br>
+                    </ul>
+                </li>
+                <li>
+                    <h1>Learn More</h1><br>
+                    <ul>
+                        <li>Privacy</li><br>
+                        <li>Security</li><br>
+                        <li>Terms</li><br>
+                        <li>Sitemap</li>
+                    </ul>
+                </li>
+                <li>
+                    <h1>Social links</h1><br>
+                    <ul>
+                        <li><pre><i class="fa-brands fa-facebook"></i>  <i class="fa-brands fa-square-instagram"></i>  <i class="fa-brands fa-youtube"></i>  <i class="fa-brands fa-twitter"></i></pre></li><br>
+                        <li> <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt=""></li><br>
+                        <li> <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt=""></li>
+                
+                    </ul>
+                </li>
+            </ol>
+
+       </aside><br>
+       <hr><br>
+       <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008 <br>-2024 © Zomato™ Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
